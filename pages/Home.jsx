@@ -3,6 +3,14 @@ import { LuGithub } from "react-icons/lu";
 import { CiLinkedin } from "react-icons/ci";
 import { BiDownArrowAlt } from "react-icons/bi";
 import { useStateContext } from "../context/StateContext";
+import cartSvg from "../assets/cart.svg";
+import mongodbSvg from "../assets/mongodb.svg";
+import figmaSvg from "../assets/figma.svg";
+import javascriptSvg from "../assets/javascript.svg";
+import nodejsSvg from "../assets/nodejs.svg";
+import reactSvg from "../assets/react.svg";
+import trainSvg from "../assets/train.svg";
+import gitSvg from "../assets/git.svg";
 
 const Home = () => {
   const { handleProject, handleContact } = useStateContext();
@@ -47,18 +55,18 @@ const Home = () => {
           <div className="skills">
             <div className="skills-inner">
               <div className="skills-slide">
-                <img style={{ height: "100px" }} src="../assets/cart.svg" />
-                <img src="../assets/figma.svg" />
-                <img src="../assets/mongodb.svg" />
-                <img src="../assets/nodejs.svg" />
-                <img src="../assets/git.svg" />
-                <img src="../assets/javascript.svg" />
-                <img src="../assets/react.svg" />
+                <img style={{ height: "100px" }} src={cartSvg} />
+                <img src={cartSvg} />
+                <img src={reactSvg} />
+                <img src={nodejsSvg} />
+                <img src={gitSvg} />
+                <img src={javascriptSvg} />
+                <img src={reactSvg} />
                 <img
                   style={{
                     height: "100px",
                   }}
-                  src="../assets/train.svg"
+                  src={trainSvg}
                 />
               </div>
             </div>
