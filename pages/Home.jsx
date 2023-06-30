@@ -62,7 +62,6 @@ const Home = () => {
                 <img src={nodejsSvg} />
                 <img src={gitSvg} />
                 <img src={javascriptSvg} />
-                <img src={reactSvg} />
                 <img
                   style={{
                     height: "100px",
