@@ -56,7 +56,8 @@ const Home = () => {
             <div className="skills-inner">
               <div className="skills-slide">
                 <img style={{ height: "100px" }} src={cartSvg} />
-                <img src={cartSvg} />
+                <img src={figmaSvg} />
+                <img src={mongodbSvg} />
                 <img src={reactSvg} />
                 <img src={nodejsSvg} />
                 <img src={gitSvg} />
