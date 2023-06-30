@@ -52,32 +52,34 @@ const Home = () => {
           <div className="button-container">
             <button onClick={handleContact}>contact me</button>
           </div>
-          <div className="skills">
-            <div className="skills-inner">
-              <div className="skills-slide">
-                <img style={{ height: "100px" }} src={cartSvg} />
-                <img src={figmaSvg} />
-                <img src={mongodbSvg} />
-                <img src={reactSvg} />
-                <img src={nodejsSvg} />
-                <img src={gitSvg} />
-                <img src={javascriptSvg} />
-                <img
-                  style={{
-                    height: "100px",
-                  }}
-                  src={trainSvg}
-                />
+          <div className="split-skills-projects">
+            <div className="skills">
+              <div className="skills-inner">
+                <div className="skills-slide">
+                  <img style={{ height: "100px" }} src={cartSvg} />
+                  <img src={gitSvg} />
+                  <img src={nodejsSvg} />
+                  <img src={mongodbSvg} />
+                  <img src={figmaSvg} />
+                  <img src={javascriptSvg} />
+                  <img src={reactSvg} />
+                  <img
+                    style={{
+                      height: "100px",
+                    }}
+                    src={trainSvg}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="project-button">
-            <button className="project-container">
-              <span onClick={handleProject} className="project-text">
-                Projects
-              </span>
-              <BiDownArrowAlt style={{ fontSize: "25px" }} />
-            </button>
+            <div className="project-button">
+              <button className="project-container">
+                <span onClick={handleProject} className="project-text">
+                  Projects
+                </span>
+                <BiDownArrowAlt className="down-arrow" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
