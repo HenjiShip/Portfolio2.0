@@ -4,24 +4,24 @@ const Context = createContext();
 
 export const StateContext = ({ children }) => {
   // Define your state variables or any other global data here
-  const project = useRef(null);
-  const contact = useRef(null)
+  const projectScroll = useRef(null);
+  const contactScroll = useRef(null)
 
-  const handleProject = () => {
-    project.current?.scrollIntoView({ behavior: "smooth" });
+  const handleProjectScroll = () => {
+    projectScroll.current?.scrollIntoView({ behavior: "smooth" });
   };
-  const handleContact = () => {
-    contact.current?.scrollIntoView({ behavior: "smooth" });
+  const handleContactScroll = () => {
+    contactScroll.current?.scrollIntoView({ behavior: "smooth" });
   }
 
   // Define any functions or methods that will modify the state here
 
   // Create an object to store the data and functions you want to pass down through context
   const contextValue = {
-    contact,
-    project,
-    handleProject,
-    handleContact
+    contactScroll,
+    projectScroll,
+    handleProjectScroll,
+    handleContactScroll,
   };
 
   // Wrap the children components with the context provider

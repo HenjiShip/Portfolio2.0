@@ -13,7 +13,7 @@ import trainSvg from "../assets/train.svg";
 import gitSvg from "../assets/git.svg";
 
 const Home = () => {
-  const { handleProject, handleContact } = useStateContext();
+  const { handleProjectScroll, handleContactScroll } = useStateContext();
 
   // selects all images in skills-slide and applies that sass keyframe animation to them
   useEffect(() => {
@@ -50,7 +50,7 @@ const Home = () => {
           <h1>Henry Li</h1>
           <h3>Full Stack Developer</h3>
           <div className="button-container">
-            <button onClick={handleContact}>contact me</button>
+            <button onClick={handleContactScroll}>contact me</button>
           </div>
           <div className="split-skills-projects">
             <div className="skills">
@@ -74,7 +74,7 @@ const Home = () => {
             </div>
             <div className="project-button">
               <button className="project-container">
-                <span onClick={handleProject} className="project-text">
+                <span onClick={handleProjectScroll} className="project-text">
                   Projects
                 </span>
                 <BiDownArrowAlt className="down-arrow" />
