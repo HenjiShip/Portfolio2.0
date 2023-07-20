@@ -11,6 +11,10 @@ const Portfolio = () => {
       name: "Drizco",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/Ecommerce",
+      liveDemo: "https://drizco.netlify.app",
+      technologies:
+        "Javascript, Sanity CMS, NextJS, React, Stripe, JSONWebToken, Express, NodeJS, Axios, Google OAuth",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard",
     },
@@ -18,6 +22,10 @@ const Portfolio = () => {
       name: "Stickstock",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/StickStock",
+      liveDemo: "https://stickstock.netlify.app",
+      technologies:
+        "Javascript, NodeJS, ExpressJS, MongoDB, Cloudinary CDN, Redux, Axios, Google OAuth, MaterialUI, JSONWebToken",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard too",
     },
@@ -25,6 +33,9 @@ const Portfolio = () => {
       name: "Chateth",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/Chateth",
+      liveDemo: "https://chateth.netlify.app",
+      technologies: "Vite, Javascript, SASS, React, Firebase",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard also",
     },
@@ -32,6 +43,9 @@ const Portfolio = () => {
       name: "Gluetube",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/Youtube-Clone",
+      liveDemo: "https://gluetube.netlify.app",
+      technologies: "React, Javascript, CSS, RapidAPI, Axios",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard also",
     },
@@ -39,13 +53,19 @@ const Portfolio = () => {
       name: "Portfolio v1.0",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/Portfolio",
+      liveDemo: "https://app.netlify.com/sites/henji/overview",
+      technologies: "React, Javascript, CSS",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard also",
     },
     {
-      name: "Movie Search App",
+      name: "Snake Game",
       coverImage: drizco,
       coverGIF: drizcoGIF,
+      githubLink: "https://github.com/HenjiShip/worm-game",
+      liveDemo: "https://sesameworm.netlify.app",
+      technologies: "Phaser 3",
       images: ["image1", "image2", "image3"],
       description: "I hate mustard also",
     },
@@ -55,7 +75,7 @@ const Portfolio = () => {
       <div ref={projectScroll} className="container">
         <div className="grid-container">
           {projects.map((proj) => {
-            return <Projects proj={proj} />;
+            return <Projects key={proj.name} proj={proj} />;
           })}
         </div>
       </div>
