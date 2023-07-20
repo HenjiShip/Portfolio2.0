@@ -2,6 +2,7 @@ import React, { createContext, useContext, useRef } from "react";
 
 const Context = createContext();
 
+// handles onClick scrolling in Home.jsx
 export const StateContext = ({ children }) => {
   // Define your state variables or any other global data here
   const projectScroll = useRef(null);
