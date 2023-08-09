@@ -3,8 +3,15 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillCloud } from "react-icons/ai";
 
 const Modal = ({ proj, CV, setOpenModal }) => {
-  const { name, images, description, technologies, githubLink, liveDemo } =
-    proj || {};
+  const {
+    name,
+    features,
+    images,
+    description,
+    technologies,
+    githubLink,
+    liveDemo,
+  } = proj || {};
 
   const [mainImage, setMainImage] = useState(
     images && images.length > 0 ? images[0] : null
@@ -55,7 +62,18 @@ const Modal = ({ proj, CV, setOpenModal }) => {
             </button>
           </div>
           <div className="description">
+            <span style={{ fontWeight: "bold" }}>Description: </span>
+            <br />
             <span>{description}</span>
+          </div>
+          <br />
+          <span style={{ fontWeight: "bold" }}>Features: </span>
+          <div style={{ padding: "6px 0px 0px 25px" }}>
+            <ul>
+              {features.map((feature) => {
+                return <li>{feature}</li>;
+              })}
+            </ul>
           </div>
           <div className="technologies">
             <span>{technologies}</span>
