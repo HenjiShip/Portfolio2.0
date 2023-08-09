@@ -27,10 +27,19 @@ const projects = [
     githubLink: "https://github.com/HenjiShip/Ecommerce",
     liveDemo: "https://drizco.netlify.app",
     technologies:
-      "Javascript, Sanity CMS, NextJS, React, Stripe, JSONWebToken, Express, NodeJS, Axios, Google OAuth",
+      "Javascript | Sanity CMS | NextJS | React | Stripe | JSONWebToken | Express | NodeJS | Axios | Google OAuth",
     images: [drizco, drizcoProduct, drizcoCart, drizcoPay],
+    features: [
+      "Personalized login functionality",
+      "Persistent user carts for easy updates",
+      "Responsive design across devices",
+      "Streamlined product management with Sanity CMS",
+      "Robust security with JSON Web Tokens and HTTP-only cookies",
+      "Stripe payments",
+      "Functional payment processing (Test with: Card Number: 4242 4242 4242 4242, Expiration: 12/34, CVC: Any 3 digits)",
+    ],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Meet Drizco, your go-to ecommerce destination, designed to elevate your online shopping journey. With personalized login features, effortlessly manage your cart and make updates seamlessly. Drizco ensures a consistent experience across all devices, complemented by streamlined product management through Sanity CMS. Rest easy knowing that robust security measures, including JSON Web Tokens and HTTP-only cookies, safeguard your information. Plus, experience hassle-free payment processing, ready for testing with the provided card details. Discover the future of online shopping with Drizco!",
   },
   {
     name: "Stickstock",
@@ -39,9 +48,17 @@ const projects = [
     githubLink: "https://github.com/HenjiShip/StickStock",
     liveDemo: "https://stickstock.netlify.app",
     technologies:
-      "Javascript, NodeJS, ExpressJS, MongoDB, Cloudinary CDN, Redux, Axios, Google OAuth, MaterialUI, JSONWebToken",
+      "Javascript | NodeJS | ExpressJS | MongoDB | Cloudinary CDN | Redux | Axios | Google OAuth | MaterialUI | JSONWebToken",
     images: [stickstock, stickstockProfile, stickstockUpload],
-    description: "I hate mustard too",
+    features: [
+      "Database CRUD functionality",
+      "JSON web tokens",
+      "Full stack application",
+      "Cloudinary CDN for speedy content delivery",
+      "REST API",
+    ],
+    description:
+      "This is an image sharing website with UI inspired by TikTok. There placeholder buttons for upcoming features, however, the functions that do work include liking posts, uploading posts, deleting posts, creating posts, and logging in with google auth. StickStock automatically sets the profile picture linked to your google account as well!",
   },
   {
     name: "Chateth",
@@ -49,9 +66,16 @@ const projects = [
     coverGIF: drizcoGIF,
     githubLink: "https://github.com/HenjiShip/Chateth",
     liveDemo: "https://chateth.netlify.app",
-    technologies: "Vite, Javascript, SASS, React, Firebase",
+    technologies: "Vite | Javascript | SASS | React | Firebase",
     images: [chatethLogin, chatethHome],
-    description: "I hate mustard also",
+    features: [
+      "Real time chat functionality",
+      "Cloud storage for chat and users with Firebase",
+      "Reusable components",
+      "Image uploading for chat",
+    ],
+    description:
+      "Presenting an innovative chat application that draws design inspiration from the renowned RPG game Persona 5. Currently in a developmental phase, this chat application showcases a fully operational chat interface, allowing users to seamlessly engage in conversations. By entering the user's unique ID, individuals can swiftly initiate dialogues, fostering seamless communication experiences.",
   },
   {
     name: "Gluetube",
@@ -61,7 +85,15 @@ const projects = [
     liveDemo: "https://gluetube.netlify.app",
     technologies: "React, Javascript, CSS, RapidAPI, Axios",
     images: [gluetube, gluetubeVideo, gluetubeChannel],
-    description: "I hate mustard also",
+    features: [
+      "API",
+      "Responsive design",
+      "Video search and categorized videos",
+      "View video statistics, comments, and details",
+      "Visit user channels and view channel details",
+    ],
+    description:
+      "A simple web application that uses Youtube's API to gather and watch videos. It includes many of Youtube's main video watching functionality.",
   },
   {
     name: "Portfolio v1.0",
@@ -69,9 +101,17 @@ const projects = [
     coverGIF: drizcoGIF,
     githubLink: "https://github.com/HenjiShip/Portfolio",
     liveDemo: "https://henji.netlify.app/",
-    technologies: "React, Javascript, CSS",
+    technologies:
+      "React | Javascript | CSS | ThreeJS | EmailJS | Framer Motion | Tailwind",
     images: [portfolio1, portfolio1responsive],
-    description: "I hate mustard also",
+    features: [
+      "Responsive design",
+      "Uses tailwind for quick design",
+      "Uploaded to netlify cloud hosting",
+      "Contains links to various social media and project demos",
+    ],
+    description:
+      "My old portfolio website that used ThreeJS for a rotating 3D object in the home page. It's a responsive portfolio website that features some neat CSS animations and can be used to contact me through the emailJS service",
   },
   {
     name: "Snake Game",
@@ -79,9 +119,11 @@ const projects = [
     coverGIF: drizcoGIF,
     githubLink: "https://github.com/HenjiShip/worm-game",
     liveDemo: "https://sesameworm.netlify.app",
-    technologies: "Phaser 3",
+    technologies: "Phaser 3 | HTML | CSS",
     images: [slimeyHome, slimeyTut, slimeyGame, slimeyEnd],
-    description: "I hate mustard also",
+    features: ["Phaser 3 engine for controls using arrow keys", "Start and end game lifestyle"],
+    description:
+      "Developed during my time at Sesame Workshop, the Snake Game stands as a testament to my commitment to innovation and collaboration. Amidst addressing software issues and ensuring system integrity, I dedicated my downtime to collaborate with the Sesame team, conceiving an engaging fan game. This joined effort yielded a captivating snake game, seamlessly integrated into the Sesame Workshop website. Throughout this endeavor, I embraced an agile framework, leveraging pivotal tools such as JIRA and Bitbucket to meticulously manage codebase iterations and commits. This experience not only underscored my technical proficiency but also highlighted my capacity to thrive within dynamic, team-driven environments.",
   },
 ];
 
