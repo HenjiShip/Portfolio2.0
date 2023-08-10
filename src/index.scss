@@ -288,7 +288,7 @@
 .grid-item {
   background-color: rgba(255, 255, 255);
   border: 2px solid rgba(0, 0, 0);
-  width: 300px;
+  width: 320px;
   height: 169px;
   padding: 5px;
   border-radius: 10px;
@@ -532,6 +532,7 @@
     width: calc(100% - 65px);
     height: calc(100% - 120px);
     overflow-y: auto;
+    overflow-x: hidden;
 
     .main-image {
       display: flex;
@@ -545,7 +546,7 @@
 
     .image-grid {
       padding: 20px 0px 20px 0px;
-      width: 100%;
+      width: 98%;
       min-height: 95px;
       overflow-x: scroll;
       overflow-y: hidden;
@@ -642,16 +643,6 @@
 
     .technologies {
       padding-top: 20px;
-    }
-  }
-}
-
-@media (max-width: 740px) {
-  .modal-container {
-    .inner-container {
-      .image-grid {
-        width: 100%;
-      }
     }
   }
 }

@@ -1,12 +1,10 @@
 import drizco from "../assets/drizco.png";
-import drizcoGIF from "../assets/drizco.gif";
 import gluetube from "../assets/gluetube.png";
 import gluetubeVideo from "../assets/gluetubeVideo.png";
 import gluetubeChannel from "../assets/gluetubeChannel.png";
 import stickstock from "../assets/stickstock.png";
 import stickstockProfile from "../assets/stickstockProfile.png";
 import stickstockUpload from "../assets/stickstockUpload.png";
-
 import drizcoPay from "../assets/drizcoPay.png";
 import drizcoProduct from "../assets/drizcoProduct.png";
 import drizcoCart from "../assets/drizcoCart.png";
@@ -18,6 +16,13 @@ import slimeyHome from "../assets/slimeyHome.png";
 import slimeyTut from "../assets/slimeyTut.png";
 import slimeyGame from "../assets/slimeyGame.png";
 import slimeyEnd from "../assets/slimeyEnd.png";
+
+import drizcoGIF from "../assets/drizco.gif";
+import stickstockGIF from "../assets/stickstock.gif";
+import chatethGIF from "../assets/chateth.gif";
+import gluetubeGIF from "../assets/gluetube.gif";
+import portfolio1GIF from "../assets/portfolio1.gif";
+import slimeyGIF from "../assets/slimey.gif";
 
 const projects = [
   {
@@ -44,7 +49,7 @@ const projects = [
   {
     name: "Stickstock",
     coverImage: stickstock,
-    coverGIF: drizcoGIF,
+    coverGIF: stickstockGIF,
     githubLink: "https://github.com/HenjiShip/StickStock",
     liveDemo: "https://stickstock.netlify.app",
     technologies:
@@ -63,7 +68,7 @@ const projects = [
   {
     name: "Chateth",
     coverImage: chatethLogin,
-    coverGIF: drizcoGIF,
+    coverGIF: chatethGIF,
     githubLink: "https://github.com/HenjiShip/Chateth",
     liveDemo: "https://chateth.netlify.app",
     technologies: "Vite | Javascript | SASS | React | Firebase",
@@ -80,7 +85,7 @@ const projects = [
   {
     name: "Gluetube",
     coverImage: gluetube,
-    coverGIF: drizcoGIF,
+    coverGIF: gluetubeGIF,
     githubLink: "https://github.com/HenjiShip/Youtube-Clone",
     liveDemo: "https://gluetube.netlify.app",
     technologies: "React, Javascript, CSS, RapidAPI, Axios",
@@ -98,7 +103,7 @@ const projects = [
   {
     name: "Portfolio v1.0",
     coverImage: portfolio1,
-    coverGIF: drizcoGIF,
+    coverGIF: portfolio1GIF,
     githubLink: "https://github.com/HenjiShip/Portfolio",
     liveDemo: "https://henji.netlify.app/",
     technologies:
@@ -116,12 +121,15 @@ const projects = [
   {
     name: "Snake Game",
     coverImage: slimeyHome,
-    coverGIF: drizcoGIF,
+    coverGIF: slimeyGIF,
     githubLink: "https://github.com/HenjiShip/worm-game",
     liveDemo: "https://sesameworm.netlify.app",
     technologies: "Phaser 3 | HTML | CSS",
     images: [slimeyHome, slimeyTut, slimeyGame, slimeyEnd],
-    features: ["Phaser 3 engine for controls using arrow keys", "Start and end game lifestyle"],
+    features: [
+      "Phaser 3 engine for controls using arrow keys",
+      "Start and end game lifestyle",
+    ],
     description:
       "Developed during my time at Sesame Workshop, the Snake Game stands as a testament to my commitment to innovation and collaboration. Amidst addressing software issues and ensuring system integrity, I dedicated my downtime to collaborate with the Sesame team, conceiving an engaging fan game. This joined effort yielded a captivating snake game, seamlessly integrated into the Sesame Workshop website. Throughout this endeavor, I embraced an agile framework, leveraging pivotal tools such as JIRA and Bitbucket to meticulously manage codebase iterations and commits. This experience not only underscored my technical proficiency but also highlighted my capacity to thrive within dynamic, team-driven environments.",
   },
