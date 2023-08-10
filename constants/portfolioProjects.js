@@ -105,7 +105,7 @@ const projects = [
     coverImage: portfolio1,
     coverGIF: portfolio1GIF,
     githubLink: "https://github.com/HenjiShip/Portfolio",
-    liveDemo: "https://henji.netlify.app/",
+    liveDemo: "https://henjiv1.netlify.app/",
     technologies:
       "React | Javascript | CSS | ThreeJS | EmailJS | Framer Motion | Tailwind",
     images: [portfolio1, portfolio1responsive],

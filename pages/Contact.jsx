@@ -1,5 +1,6 @@
 import React from "react";
 import { useStateContext } from "../context/StateContext";
+import Emailme from "../components/Emailme";
 
 const Contact = () => {
   const { contactScroll } = useStateContext();
@@ -8,11 +9,7 @@ const Contact = () => {
       <div ref={contactScroll} className="container">
         <div className="inner-container">
           <h3>Send me a message for work or freelance services</h3>
-          <form className="form">
-            <h4>Contact Me</h4>
-            <textarea className="message" name="message" />
-            <input className="button" type="submit" />
-          </form>
+          <Emailme />
         </div>
       </div>
     </div>
