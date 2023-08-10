@@ -16,8 +16,7 @@ const About = () => {
         <div className="about-me-container">
           <div className="about-me">
             <span>
-              Hi, my name is Henry Li. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.
+              Hi, my name is Henry Li. I'm a full stack developer focusing on Javascript related technologies. Check out my resume or contact me for more information.
             </span>
             <button onClick={() => setOpenModal(true)}>
               <FiArrowUpRight className="react-icon" />
