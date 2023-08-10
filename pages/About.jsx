@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-me-container">
           <div className="about-me">
             <span>
-              Hi, my name is Henry Li. I'm a full stack developer focusing on Javascript related technologies. Check out my resume or contact me for more information.
+              Hi, my name is Henry Li. I'm a full stack developer focusing on Javascript and cloud related technologies. Check out my resume or contact me for more information.
             </span>
             <button onClick={() => setOpenModal(true)}>
               <FiArrowUpRight className="react-icon" />
