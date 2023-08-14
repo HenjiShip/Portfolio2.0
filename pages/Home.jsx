@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { LuGithub } from "react-icons/lu";
-import { CiLinkedin } from "react-icons/ci";
 import { BiDownArrowAlt } from "react-icons/bi";
 import { useStateContext } from "../context/StateContext";
 import cartSvg from "../assets/cart.svg";
@@ -11,6 +9,7 @@ import nodejsSvg from "../assets/nodejs.svg";
 import reactSvg from "../assets/react.svg";
 import trainSvg from "../assets/train.svg";
 import gitSvg from "../assets/git.svg";
+import Socials from "../components/Socials";
 
 const Home = () => {
   const { handleProjectScroll, handleContactScroll } = useStateContext();
@@ -30,20 +29,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <ul>
-        <li>
-          <LuGithub style={{ paddingTop: "5px" }} />
-          <a href="https://github.com/HenjiShip" target="_blank">
-            Github
-          </a>
-        </li>
-        <li>
-          <CiLinkedin style={{ paddingTop: "5px" }} />
-          <a href="https://www.linkedin.com/in/henji/" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <Socials float="float-right"/>
       <div className="container">
         <div className="title">
           <div style={{ height: "150px" }}></div>
